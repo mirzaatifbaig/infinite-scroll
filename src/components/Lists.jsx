@@ -7,7 +7,7 @@ import List from "@/components/List.jsx";
 
 const fetchItems = async ({ pageParam = 1 }) => {
   console.log(pageParam);
-  const res = await axios.get(`/products?_page=${pageParam}&_per_page=24`);
+  const res = await axios.get(`/?_page=${pageParam}&_per_page=24`);
   console.log(res.data.data);
   return {
     data: res.data.data,

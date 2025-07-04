@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "express": "^4.19.2",
+    "cors": "^2.8.5",
     "@tinyhttp/app": "^2.4.0",
     "@tinyhttp/cors": "^2.0.1",
     "@tinyhttp/logger": "^2.0.0",
