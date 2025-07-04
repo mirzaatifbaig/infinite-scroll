@@ -4,7 +4,7 @@
     {
       "src": "api/index.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["api/db.json"] }
+      "config": { "includeFiles": ["api/db.json", "node_modules/json-server/**"] }
     }
   ],
   "routes": [
