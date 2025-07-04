@@ -8,9 +8,9 @@ import List from "@/components/List.jsx";
 const fetchItems = async ({ pageParam = 1 }) => {
   console.log(pageParam);
   const res = await axios.get(`/?_page=${pageParam}&_per_page=24`);
-  console.log(res.data.data);
+  console.log(res.data);
   return {
-    data: res.data.data,
+    data: res.data,
     nextPage: pageParam + 1,
     hasMore: res.data.data.length > 0,
   };
@@ -49,6 +49,12 @@ function Lists() {
         <List product={product} key={product.id} />
       ))}
       {isFetchingNextPage && <Loading />}
+      {
+        data?.map(
+            item =>
+                console.log(item)
+        )
+      }
     </InfiniteScroll>
   );
 }
