@@ -26,3 +26,4 @@ dist-ssr
 # Project exclude paths
 /src/lib/utils.js
 /.idea/
+/.idea/
