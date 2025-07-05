@@ -1,6 +1,6 @@
 import axios from "axios";
 const instance = axios.create({
-  baseURL: "https://infinite-scroll-git-master-mirzaatifbaigs-projects.vercel.app",
+  baseURL: "https://infinite-scroll-backend-git-master-mirzaatifbaigs-projects.vercel.app",
   headers: {
     Accept: "application/json",
   },
